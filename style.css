@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+#container{
+    width:100%;
+    height:100vh;
+    position:relative;
+
+}
+#navbar{
+    display:flex;
+    width:85%;
+    margin-left: 100px;
+    justify-content: space-between; /*horizontally*/
+    align-items: center; /*vertically*/
+}
+#logo{
+    width:130px;
+}
+#listitem{
+    list-style: none;  /*dot will removes*/
+    display:inline;
+    margin:10px 20px;
+    font-weight: 700;
+
+}
+/*pseudo
+used to define a special state of an element eg::hover,active,inactive etc
+syntax:element:pseudo(property value)*/
+li a:hover{
+    color:red;
+}
+li a{
+    text-decoration: none; /*remove underlines*/
+    color: black;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+#title h1{
+    font-size: 50px;
+}
+#lastname{
+    color: orange;
+}
+#para{
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+#title a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px;
+}
+#images{
+    width:45%;
+    height:80%;
+    position:absolute;
+    right:30px;
+    bottom:0px;
+
+
+}
+.imagegroup{
+    position:absolute;
+    height:100%;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+    transition:bottom 1s,left 2s;
+}
+#images:hover #shape{
+    bottom:70px;
+}
+#images:hover #girl{
+    left:40%;
+}
+#about{
+    text-align: center;
+    margin-left: 50px;
+}
+#color{
+    color: green;
+}
+#single{
+    width:35%;
+    margin-left: 8%;
+   
+} 
+#para2{
+    margin-left: 55%;
+    margin-top: -21%;
+}
+ /* display: grid;
+    grid-template-columns:repeat(2,1fr) ; inganim
+    kodkam njmk ee margin sambavm oke oyvakit
+    ayn aadyam oru div ella images oke
+    kodkanm nnt chyya ith*/
+#skills{
+    text-align: center;
+
+}    
+#skills span{
+    color: green;
+}
+#skill_container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+
+}
+#skill_img img{
+    width:90%;
+    
+}
+.bar-container{
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+.bar-container span{
+    font-weight: 800;
+    font-size: 20px;
+
+}
+.bar{
+    width:90%;
+    height:0.5rem;
+    background-color: black;
+    border-radius:10px;
+    position:absolute;
+    bottom: 0px;
+}
+#html_bar{
+    width:85%;
+    background-color: orange;
+}
+#css_bar{
+    width:75%;
+    background-color: orange;
+}
+#js_bar{
+    width:45%;
+    background-color: orange;
+}
+#react_bar{
+    width:89%;
+    background-color: orange;
+}
+#contact span{
+    color: green;
+
+}
+#contact{
+    text-align: center;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 2rem;
+    
+   
+}
+.icon,#up-arrow {
+  border-radius: 60px;
+  width:45px;
+  height:45px;
+  margin:0px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid red;  border veraan*/
+  
+  
+  
+}
+.icon i{ 
+    color: black;
+   
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,rgba(255, 166, 0, 0.884));
+
+
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform:rotate(-15deg);
+    }
+    30%{
+        transform:rotate(15deg);
+    }
+    40%{
+        transform:rotate(-15deg);
+    }
+
+}
+#footer p{
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-left:7px;
+
+}
+#foot{
+    margin-left: 40%;
+    align-items: center;
+    margin-top: 50px;
+}
+#up-arrow{
+    float:right;
+    background-image: linear-gradient(to bottom right,yellow,rgba(255, 166, 0, 0.884));
+    margin: 10px 50px 50px 0px ;
+  
+    
+
+}
+
+
+
+
